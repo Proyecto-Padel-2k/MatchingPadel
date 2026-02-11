@@ -1,0 +1,56 @@
+{
+  "name": "peliculas",
+  "private": true,
+  "version": "0.0.0",
+  "main": "main.cjs",
+  "description": "Aplicación de escritorio SQLito",
+  "author": "Abdel Samini",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "electron-dev": "cross-env ELECTRON_START_URL=http://localhost:5173 electron .",
+    "electron-pack": "electron-builder"
+  },
+  "dependencies": {
+    "@fontsource/roboto": "^5.2.8",
+    "@tailwindcss/vite": "^4.0.0",
+    "axios": "^1.13.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.1.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "postcss": "^8.5.1",
+    "prop-types": "^15.8.1",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.7",
+    "electron": "^26.0.0",
+    "electron-builder": "^24.0.0",
+    "cross-env": "^7.0.0"
+  },
+  "build": {
+    "appId": "com.sqlito.app",
+    "productName": "SQLito",
+    "win": {
+      "target": "nsis"
+    },
+    "files": [
+      "dist/**/*",
+      "main.cjs",
+      "package.json"
+    ]
+  }
+}

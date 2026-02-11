@@ -1,0 +1,1 @@
+// src/data/productos.js
